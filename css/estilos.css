@@ -1,3 +1,151 @@
+/* light mode colors */
+:root{
+    --branco-preto:#ffffff;
+    --font-cor: #4a566e;     
+}
+/* apply dark mode colors when button is checked */
+input:checked,
+input:checked + * {
+  --branco-preto: #121212;
+  --font-cor: #f8f8f8;  
+}
+/* apply CSS varaible through var() */
+ *{
+    background: var(--branco-preto);
+    color: var(--font-cor);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    outline: 0;
+    position: absolute;
+    opacity: 0%;
+    z-index: 2;
+    top: 80px;
+    right: 600px;
+    width: 150px;
+    height: 200px;    
+    cursor: pointer;
+}
+
+body{
+    margin: 0 0 0 0;    
+}
 .titulo {
-    color: Arial;
+    font-family: 'Roboto';
+    color: var(--font-cor);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em ;
+}
+.subtitulo {
+    font-family: 'Roboto';
+    color: var(--font-cor);
+    text-align: center;
+    padding-top: 1em;    
+}
+.titulo-menor{
+    font-family: 'Roboto';
+    color: var(--font-cor);
+    text-align: center;    
+    justify-content: center;
+}
+.tecnologias{
+    font-family: 'Roboto';
+    color: #741bff;
+    text-align: center;
+    padding-top: 1em;    
+}
+.titulo-branco{
+    font-family: 'Roboto';
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em ;
+    background-color: #741bff;  
+}
+.navbar{        
+    background-color: var(--branco-preto);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: right;        
+}
+.navbar a{
+    font-family: "Roboto";
+    text-decoration: none;
+    color: var(--font-cor);
+    font-size: 1em;    
+    margin-right: 2em;
+}
+.umEm{
+    padding: 2em 1em 2em 1em;
+}
+.minhas-habilidades-caixa{
+    background-color: #741bff;       
+    padding-top: 1em;   
+}
+.img-minha{
+    height: 200px;
+    border-radius: 50px;      
+}
+.foto-minha{
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-padrao{
+    font-family: 'Roboto', 'Arial';
+    text-align: center;
+    font-size: 1em;    
+    color: var(--font-cor);
+    padding-bottom: 3em;
+    margin: 0 0 0 0;
+}
+.minhas-habilidades-subcaixa{
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    background-color: #741bff;       
+}
+.habilidade{
+    background-color: var(--branco-preto);
+    border-radius: 10px;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em 2em 1em 2em;
+    margin-bottom: 2em;
+}
+.imagem-pequena{
+    padding-top: 2em;
+    height: 45px;           
+}
+.img-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+.fale-cmg{
+    font-family: "Roboto";
+    color: var(--font-cor);    
+    border-radius: 50px;
+    padding: 0em 2em 2em 2em;    
+}
+.fale-cmg input{
+    height: 2em;
+    font-family: "Roboto";
+    color: var(--font-cor);
+
+}
+#fale-comigo{
+    padding-top: 1em;
+    padding-bottom: 6.5em;
+}
+#fale-comigo input, textarea, button{
+    border-radius: 10px;
+}
+.button{
+    padding: 1em 1em 1em 1em;
 }

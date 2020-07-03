@@ -1,6 +1,87 @@
-<link rel="stylesheet" href="./css/estilos.css" >
 <html>
+    <head>
+        <link rel="stylesheet" href="./css/estilos.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Olá, me chamo Pedro!</title>
+    </head>
+    <header>        
+        <div class="navbar">
+            <a  href="#sobre-mim">Sobre mim</a> 
+            <a  href="#minhas-habilidades">Minhas habilidades</a>    
+            <a  href="#fale-comigo">Fale comigo</a>
+        </div>
+    </header>
     <body>
-        <h1 class="titulo">Hello World!</h1>
+        <input type="checkbox" />
+        <div id="sobre-mim">                                    
+            <h1 class="titulo">Pedro Araujo Pinto</h1>  
+            <div class="foto-minha">                      
+                <img src="img/foto.jpg" class="img-minha">                
+            </div>
+            <h2 class="texto-padrao">Tenho 21 anos, sou um desenvolvedor web,
+                <br> oriundo de Recife, com experiência <br>na área de desenvolvimento Front-end e Back-end
+                <br>utilizando JavaScript, também possuo conhecimentos 
+                <br>básicos em C e Java mas não são minha especialidade :)
+            </h2>            
+        </div>
+        <div id="minhas-habilidades" class="minhas-habilidades-caixa">
+            <h2 class="titulo-branco">Minhas habilidades</h2>
+            <div class="minhas-habilidades-subcaixa">
+                <div class="habilidade">
+                    <div class="img-center">
+                        <img src="./img/frontend.jpg" class="imagem-pequena">                    
+                    </div>
+                    <h3 class="subtitulo">Front-end</h3>
+                    <p class="titulo-menor">Eu programo sites do zero, e levo ideias
+                        <br> do papel para o navegador, me
+                        <br> preocupando com a entrega final.
+                    </p>
+                    <b><p class="tecnologias">Tecnologias:</p></b>
+                    <p class="titulo-menor">HTML, CSS, JavaScript</p>
+                    <b><p class="tecnologias">Ferramentas:</p></b>
+                    <p class="titulo-menor">React</p>
+                    <p class="titulo-menor">Redux</p>
+                    <p class="titulo-menor">SASS</p>
+                </div>
+                <div class="habilidade">
+                    <div class="img-center">
+                        <img src="./img/backend.jpg" class="imagem-pequena">
+                    </div>
+                    <h3 class="subtitulo">Back-end</h3>
+                    <p class="titulo-menor"> Desenvolvo sistemas para dar suporte 
+                        <br>aos produtos web, crio APIs e tenho boa 
+                        <br>experiência com banco de dados.
+                    </p>
+                    <b><p class="tecnologias">Tecnologias:</p></b>
+                    <p class="titulo-menor">Node.js, REST, SQL </p>
+                    <b><p class="tecnologias">Ferramentas:</p></b>
+                    <p class="titulo-menor">Express</p>
+                    <p class="titulo-menor">Postgres</p>
+                    <p class="titulo-menor">Sequelize</p>
+                </div>
+            </div>            
+        </div>        
+        <div id="fale-comigo">        
+            <div class="img-center">
+            <form action="/action" method="post" class="fale-cmg">
+                <h2 class="titulo">Fale comigo!</h2>
+                <div class="umEm">
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome" name="usuario_nome"  />
+                </div>
+                <div class="umEm">
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="usuario_email"/>
+                </div>
+                <div class="umEm">
+                    <label for="msg">Mensagem</label><br>
+                    <textarea id="msg" name="usuario_msg">Me mande uma mensagem</textarea>
+                </div>
+                <div class="button img-center">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        </div>
     </body>
 </html>
