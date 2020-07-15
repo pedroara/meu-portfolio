@@ -9,6 +9,16 @@ body{
     padding-top: 1em;
     padding-bottom: 1em ;
 }
+.meus-contatos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.redes{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1em;
+}
 .subtitulo {
     font-family: 'Roboto';
     color: #4a566e;
@@ -118,14 +128,24 @@ body{
 }
 
 @media (max-width: 600px) {
-
+    .body{
+        margin: 0;
+        padding: 0;
+    }
     .navbar{
         display: none;
-    } 
-
+    }       
     .titulo-menor{
         padding-top: 1em;
         padding-bottom: 1em;
     }
-
+    .meus-contatos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+        place-items: center;
+        grid-row-gap: 1em;
+    }
+    .redes{
+        margin: 0;
+    }
 }
